@@ -8,8 +8,8 @@ function App() {
   // const tMyFunc = (window as { [key: string]: any })["myFunc"]
   // tMyFunc("test event")
 
-  // const tPlausible = (window as { [key: string]: any })["plausible"]
-  // tPlausible("Client-API-Error", { props: { Function: "_fetch", Path: "Test" } })
+  const tPlausible = (window as { [key: string]: any })["plausible"]
+  tPlausible("Client-API-Error", { props: { Function: "_fetch", Path: "Test" } })
 
   return (
     <div className="App">
