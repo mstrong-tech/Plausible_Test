@@ -25,6 +25,9 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <script defer data-domain="inquisitive-gaufre-9ef975.netlify.app" src="https://plausible.io/js/plausible.js"></script>
+    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+    <!--
     <script>
       // (function (){
         // const s2 = document.createElement("script")
@@ -41,9 +44,12 @@
         // const first = document.getElementsByTagName('script')[0]
         // first.parentNode.insertBefore(s, first)
       // })()
-      plausible("Client-API-Error", { props: { Function: "_fetch", Path: "Test" } })
     </script>
+    -->
   </head>
+  <script>
+    plausible("Client-API-Error", { props: { Function: "_fetch", Path: "Test" } })
+  </script>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
